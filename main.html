@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<title>FindYourRTU</title>
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +13,7 @@
 }
 
 .allFaculties a {
-  background-color: #e6ffe6;
+  background-color: #A8FFB3;
   color: black;
   display: block;
   padding: 12px;
@@ -20,11 +21,12 @@
 }
 
 .allFaculties a:hover {
-  background-color: #4d6600;
+  background-color: #216E5C;
+  color: white;
 }
 
 .allFaculties a.active {
-  background-color: #006600;
+  background-color: #005551;
   color: white;
 }
 </style>
@@ -59,9 +61,11 @@
   <a href="#">Faculty 4</a>
 </div>
 
-<footer>
-  <p align = "center" > Footer info</p>
-  <div class="w-auto py-3 text-center text-black-50 font-weight_light" style="background-color:#bdbdbd">
+<footer class="pt-2 font-small text-white" style="background-color:#00A17F">
+	<div class="container">
+		<p align = "center" > Footer info</p>
+	</div>
+	<div class="w-auto py-3 text-center text-white-50" style="background-color:#005551">
 	<!-- Copyright -->
 	© <span id="this_year"></span>
 		<!-- code to print the current year -->
@@ -71,6 +75,7 @@
 			var sannee = document.getElementById('this_year');
 			sannee.innerHTML = annee;
 		</script>
+		FinYourRTU
 </div>
 </footer>
 
