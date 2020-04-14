@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Bootstrap core CSS-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
 <style>
 .allFaculties {
   width: 200px;
@@ -57,6 +61,17 @@
 
 <footer>
   <p align = "center" > Footer info</p>
+  <div class="w-auto py-3 text-center text-black-50 font-weight_light" style="background-color:#bdbdbd">
+	<!-- Copyright -->
+	© <span id="this_year"></span>
+		<!-- code to print the current year -->
+		<script type="text/javascript">
+			var today=new Date();
+			var annee = today.getFullYear();
+			var sannee = document.getElementById('this_year');
+			sannee.innerHTML = annee;
+		</script>
+</div>
 </footer>
 
 </body>
