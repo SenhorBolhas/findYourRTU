@@ -91,7 +91,7 @@
 	<!--begining of the footer-->
 	<div class="container">
 		<div class="row mx-md-n5">
-			<div class="col-md-7 px-md-5"><!--Using .col-md-* classes, you can create a basic grid system of max 12 column. 
+			<div class="col-md-5 px-md-4"><!--Using .col-md-* classes, you can create a basic grid system of max 12 column. 
 				So here it's 7/12 and it becomes horizontal at the medium breakpoint (720px)
 				the padding is also increase at the medium breakpoint with px-md-5-->
 				<ul>email</ul>
@@ -99,16 +99,22 @@
 				<ul>phone of the school</ul>
 				<ul>link of the RTU's website</ul>
 			</div>
-			<div class="col-md-5 px-md-5"><!--Using .col-md-5 you complete the 12 column-->
-					CONTACT FORM
-					<div class="container">
-						<div class="row">
-							container to put your email
-						</div>
-						<div class="row">
-							container to put your message don't forget to add a button send
-						</div>
+			<div class="col-md-7 px-md-4"><!--Using .col-md-5 you complete the 12 column-->
+				<h4 class="font-weight-bold">CONTACT FORM</h2>
+				<p>Do you have any questions? Please do not hesitate to contact us.</p>
+				<!--contact form-->
+				<form id="contact-form" name="contact-form" action="mail.php" method="POST">
+					<div class="md-form">
+						<!--name-->
+						<input type="text" id="name" name="name" class="form-control p-2 mb-2" placeholder="Name">
+						<!--e-mail-->
+						<input type="email" id="email" name="email" class="form-control p-2 mb-2" placeholder="E-mail">
+						<textarea type="text" id="message" name="message" rows="2" class="form-control mb-2 md-textarea" placeholder="Your message"></textarea>
 					</div>
+				</form>
+				 <div class="text-center text-md-right">
+					<a class="btn text-dark btn-light mb-2" onclick="document.getElementById('contact-form').submit();">Send</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -122,7 +128,7 @@
 			var sannee = document.getElementById('this_year');
 			sannee.innerHTML = annee;
 		</script>
-		FinYourRTU
+		FindYourRTU
 </div>
 </footer>
 
