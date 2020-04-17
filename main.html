@@ -109,11 +109,14 @@
 						<input type="text" id="name" name="name" class="form-control p-2 mb-2" placeholder="Name">
 						<!--e-mail-->
 						<input type="email" id="email" name="email" class="form-control p-2 mb-2" placeholder="E-mail">
+						<!--subject-->
+						<input type="text" id="subject" name="subject" class="form-control mb-2" placeholder="subject">
+						<!--message-->
 						<textarea type="text" id="message" name="message" rows="2" class="form-control mb-2 md-textarea" placeholder="Your message"></textarea>
 					</div>
 				</form>
 				 <div class="text-center text-md-right">
-					<a class="btn text-dark btn-light mb-2" onclick="document.getElementById('contact-form').submit();">Send</a>
+					<a class="btn text-dark btn-light mb-2" onclick="validateForm();">Send</a>
 				</div>
 			</div>
 		</div>
