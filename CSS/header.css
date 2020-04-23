@@ -1,0 +1,132 @@
+/*--==========================================================HEADER====================================================--*/
+
+/* animation: slide 8s infinite;*/
+
+/* @keyframes slide{
+
+   8%{
+        background-image: url(IMAGES/2222.jpg);
+      }
+
+   40%{
+       background-image: url(IMAGES/1111.jpg);
+      }
+
+ }*/
+ 
+
+.right {
+    background-color: #005551;
+    overflow: hidden;
+}
+
+.right a {
+
+    float: right;
+    color: black;
+    text-align: center;
+    padding-left: 6px;
+    padding-top: 9px;
+    padding-right: 6px;
+    padding-bottom: 9px;
+    text-decoration: none;
+    font-size: 11px;
+    color: #ffffff;
+    font-family: "Georgia";
+}
+
+.right a:hover {
+    background-color: #a6adaa;
+    color: white;
+}
+
+/*--=========================================================/HEADER====================================================--*/
+#NAVBAR {
+    height: 80px;
+    background: white;
+
+}
+
+#NAVBAR #logo {
+    margin-left: 20px;
+    float: left;
+}
+
+#NAVBAR #nav1 ul {
+    float: right;
+}
+
+#NAVBAR #nav1 ul li {
+    font-size: 22px;
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+#NAVBAR #nav1 ul li a {
+    display: block;
+    font-family: "Georgia";
+    color: #333333;
+    font-size: 16px;
+    line-height: 55px;
+    padding: 6px 20px;
+    text-decoration: none;
+}
+
+#NAVBAR #nav1 ul li ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+#NAVBAR #nav1 ul li:hover ul {
+    display: block;
+    z-index: 100;
+}
+
+#NAVBAR #nav1 ul li:hover {
+    display: block;
+    background-color: #f3f3f3;
+    font-weight: bolder;
+}
+
+#NAVBAR #nav1 ul li ul li {
+    width: 180px;
+    border-radius: 4px;
+}
+
+#NAVBAR #nav1 ul li ul li a {
+    padding: 3px 11px;
+}
+
+#NAVBAR #nav1 ul li ul li a:hover {
+    background-color: #f3f3f3;
+}
+
+/*Vendosja e underline tek linqet*/
+
+.cool-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #a6adaa;
+    transition: width 0s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: 0;
+}
+
+#NAVBAR #nav1 ul li a:active {
+    color: black;
+    font-weight: bolder;
+}
+
+#logo{
+    margin-top: -20px;
+}
+/*--======================================================/NAVBAR====================================================--*/
