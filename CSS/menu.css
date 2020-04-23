@@ -1,6 +1,7 @@
 #allFaculties {
   /*width: 200px;*/
-  
+  height: 600px; 
+  background-color: #005551; 
 }
 
 #allFaculties a {
