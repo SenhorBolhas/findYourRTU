@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
  <head>
+            <link rel="stylesheet" type="text/css" href="../CSS/fcs.css">
             <link rel="stylesheet" type="text/css" href="../CSS/about.css">
             <link rel="stylesheet" type="text/css" href="../CSS/header.css">
             <link rel="stylesheet" type="text/css" href="../CSS/footer.css">
            <link rel="stylesheet" type="text/css" href="../CSS/menu.css"> 
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            
+            <!-- NEWWWWW -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         </head>
         <body>
     <div>
@@ -57,9 +63,152 @@
   <a href="../PAGES/FacultyofPowerandElectricalEngineering.html">Faculty of Power and Electrical Engineering</a>
   <a href="../PAGES/FacultyofElectronicsandTelecommunications.html">Faculty of Electronics and Telecommunications</a>
 </div>
+<!-- =================================================//BODY//============================================= -->
+<div class = "col-md-10" id="faculty" >
+ <a href="https://www.rtu.lv/en/university/structure-and-administration/faculties/computer-science-and-information-technology">
+    <h2 id="title">FACULTY OF COMPUTER SCIENCE AND INFORMATION TECHNOLOGY</h2>
+  </a>
+ <div>
+    <div id="img" class="col-md-6">
+    <a href="https://www.google.lv/maps/place/Daugavgr%C4%ABvas+iela+2,+Zemgales+priek%C5%A1pils%C4%93ta,+R%C4%ABga,+LV-1048/@56.9453788,24.0783187,17z/data=!3m1!4b1!4m5!3m4!1s0x46eed021cdff147d:0x36972875c7b23644!8m2!3d56.9453788!4d24.0805074?hl=en">
+        <img src="../IMAGES/cs.jpg" style="width: 100%;"> 
+    </a>
+    <!-- <p>
+        Click on the image or 
+        <a href="https://www.google.lv/maps/place/Daugavgr%C4%ABvas+iela+2,+Zemgales+priek%C5%A1pils%C4%93ta,+R%C4%ABga,+LV-1048/@56.9453788,24.0783187,17z/data=!3m1!4b1!4m5!3m4!1s0x46eed021cdff147d:0x36972875c7b23644!8m2!3d56.9453788!4d24.0805074?hl=en">
+            here
+        </a>
+        to get directions
+    </p>   -->
+ </div> 
+ <div id="door" class="col-md-6">
+    <h2>Location</h2>
+    <a style="color: black;" href="https://www.google.lv/maps/place/Daugavgr%C4%ABvas+iela+2,+Zemgales+priek%C5%A1pils%C4%93ta,+R%C4%ABga,+LV-1048/@56.9453788,24.0783187,17z/data=!3m1!4b1!4m5!3m4!1s0x46eed021cdff147d:0x36972875c7b23644!8m2!3d56.9453788!4d24.0805074?hl=en">    
+        <h4>
+            <i class='fa fa-map-marker' style="font-size: 20px;"></i> 
+            2 Daugavgrivas Street, room 233, Riga
+        </h4>
+    </a>
+    <h2>Contact</h2>
+    <h4>
+        <i class='fa fa-phone'></i> 
+        +371 67089512
+    </h4>
+    <h4>
+        <i class='fa fa-envelope-o'></i> 
+        ditf@rtu.lv
+    </h4>
+    <a href="https://www.rtu.lv/lv/ditf" style="color: black;">
+        <h4>
+        ditf.rtu.lv
+        </h4>
+    </a>
+ </div>
+<div class="col-md-12">
+    <h2 style="text-align: center;  color: #005551;">BUILDINGS</h2>
+    
+    <div class="col-md-4" style="text-align: center;">
+        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#setasModal" style="color: black;">
+            <h3 id="setas">S1</h3>
+            <h3 id="setas">Sētas st 1</h3>
+        </button>
+        
+    </div>
+    <div class="col-md-4" style="text-align: center;">
+        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#daugavgrivasModal" style="color: black;">
+            <h3  id="daugavgrivas">D2</h3>
+            <h3  id="daugavgrivas">Daugavgrīvas st 2</h3>
+        </button>
+    </div>
+    <div class="col-md-4" style="text-align: center;">
+        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#mezaModal" style="color: black;">
+            <h3 id="meza">M1</h3>
+            <h3 id="meza">Meža st</h3>
+        </button>
+    </div>
+    
+
+</div>
+ </div>
+</div>
+
+<!-- ============================================ MODAL============================================ --> 
+  <!-- SETAS Modal -->
+  <div class="modal fade" id="setasModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" >
+        <div class="col-md-10">
+          <h3 class="modal-title" style="text-align: center; color:  #005551;" >Sētas st 1</h3>
+        </div>
+        <div class="col-md-2">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        </div>
+        <div class="modal-body">
+         <!-- Add here coordinates at #-->
+          <a href="#"><img src="../IMAGES/setas_meza.png" style="width: 100%;"></a>
+          <h4 style="text-align: center;"><a href="#">Click here</a> to go to Google Maps</h4>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+   <!-- MEZA Modal -->
+   <div class="modal fade" id="mezaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" >
+        <div class="col-md-10">
+          <h3 class="modal-title" style="text-align: center; color:  #005551;" >Meža st</h3>
+        </div>
+        <div class="col-md-2">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        </div>
+        <div class="modal-body">
+         <!-- Add here coordinates at #-->
+          <a href="#"><img src="../IMAGES/setas_meza.png" style="width: 100%;"></a>
+          <h4 style="text-align: center;"><a href="#">Click here</a> to go to Google Maps</h4>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+   <!-- Daugavgrivas Modal -->
+   <div class="modal fade" id="daugavgrivasModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" >
+        <div class="col-md-10">
+          <h3 class="modal-title" style="text-align: center; color:  #005551;" >Daugavgrīvas st 2</h3>
+        </div>
+        <div class="col-md-2">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        </div>
+        <div class="modal-body">
+         <!-- Add here coordinates at #-->
+          <a href="#"><img src="../IMAGES/cs.jpg" style="width: 100%;"></a>
+          <h4 style="text-align: center;"><a href="#">Click here</a> to go to Google Maps</h4>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
 
 
-        <!--============================================================FOOTER===============================================================-->
+
+
+<!--============================================================FOOTER===============================================================-->
  <div  class="col-md-12">
          <footer class="col-md-12">
             <div class="footerSection">
@@ -145,6 +294,7 @@
     </div>
     <!--==========================================================/FOOTER===============================================================-->  
 </div>
+
   
 </body>
 
