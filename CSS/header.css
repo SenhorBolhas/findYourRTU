@@ -42,30 +42,30 @@
 
 /*--=========================================================/HEADER====================================================--*/
 #NAVBAR {
-    height: 80px;
+
     background: white;
 
 }
 
 #NAVBAR #logo {
-    margin-left: 20px;
-    float: left;
+   
+    
 }
 #NAVBAR #logo ul li{
-    margin-left: 20px;
-    float: left;
-	position: relative;
+   
+   
+
 	list-style: none;
 }
 
 
 #NAVBAR #nav1 ul {
-    float: right;
+   
 }
 
 #NAVBAR #nav1 ul li {
     font-size: 22px;
-    float: left;
+    float: right;
     list-style: none;
     position: relative;
 }
@@ -84,7 +84,7 @@
     display: none;
     position: absolute;
     background-color: white;
-    padding: 10px;
+    
     border-radius: 4px 4px 4px 4px;
 }
 
@@ -100,12 +100,12 @@
 }
 
 #NAVBAR #nav1 ul li ul li {
-    width: 180px;
+    
     border-radius: 4px;
 }
 
 #NAVBAR #nav1 ul li ul li a {
-    padding: 3px 11px;
+    
 }
 
 #NAVBAR #nav1 ul li ul li a:hover {
@@ -116,21 +116,33 @@
 
 /* Style the search field */
 form.example input[type=text] {
-  padding: 17px;
+
   font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 80%;
-  margin-top: 48px;
-  margin-left: 113px;
+  border-radius: 0%;
+  border-bottom: 2px solid black;
+  width: 100%;
   background: white;
+  margin-top: 20px;
+  padding-left: 20px;
+
 }
 
+div.col-md-4{
+    margin-top: 18px;
+    text-align: center;
+}
+#logo{
+
+    text-align: center;
+}
 /* Style the submit button */
+.btn{
+
+
+}
 form.example button {
-  float: left;
-  width: 10%;
-  padding: 10px;
+    align-self: center;
+  width: 100%;
   background: #AAAAAA;
   color: white;
   font-size: 17px;
@@ -149,10 +161,7 @@ form.example::after {
   clear: both;
   display: table;
 }
-.btnSearch {
-  margin-top: 48px;
-  margin-left: 32px;
-}
+
 /*Vendosja e underline tek linqet*/
 
 .cool-link::after {
