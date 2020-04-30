@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
- <head>
-            <link rel="stylesheet" type="text/css" href="../CSS/about.css">
-            <link rel="stylesheet" type="text/css" href="../CSS/header.css">
-            <link rel="stylesheet" type="text/css" href="../CSS/footer.css">
-           <link rel="stylesheet" type="text/css" href="../CSS/menu.css"> 
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        </head>
-        <body>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../CSS/about.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/header.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/footer.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/menu.css"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- Newww -->
+        <link rel="stylesheet" type="text/css" href="../CSS/fcs.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
     <div>
     <div class="col-md-12">      
         <!--==========================================================HEADER====================================================-->
@@ -22,27 +27,39 @@
 
 
     <!--==========================================================NAVBAR====================================================-->
-<div class="col-md-12">
+    <div class="col-md-12">
         <div id="NAVBAR" class="col-md-12" >
-            <div id="logo">
-                <h3><a href="../index.html"><img src="../IMAGES/logo.png" height="70px" width="120px"></a></h3>
+            <div class="col-md-12" >
+            <div id="logo" class="col-md-2">
+            <h3><a href="../index.html"><img src="../IMAGES/logo.png" height="70px" width="120px"></a></h3>
             </div>
-
-            <nav id="nav1">
-
+            <div class="col-md-7">
+                <div class="col-md-8">
+                    <form class="example" action="#">
+                    <input type="text" placeholder="Search.." name="search">					
+                    </form>			
+                </div>
+                <div class="col-md-4">
+                <button class="btn cool-link btnSearch"  type="submit">Search</button>
+                </div>
+            </div>
+            <div class="col-md-3"  id="nav1">
                 <ul>
-                    <li><a href="../index.html" class="cool-link">Home</a></li>
-               
-                   
-
-                    <li><a href="../PAGES/AboutUs.html" class="cool-link">About us</a></li>
-                   
-
+                    <li>
+                    <div class="col-md-2">
+                    <a href="../index.html" class="cool-link">Home</a>
+                    </div>
+                    </li>
+                    <li id="nav1">
+                    <div class="col-md-12">
+                    <a href="../PAGES/AboutUs.html" class="cool-link">About us</a>
+                    </div>
+                    </li>
                 </ul>
-
-            </nav>
+            </div>
         </div>
-    </div>
+        </div>
+
         <!--=========================================================/NAVBAR====================================================-->
 
 <div id="allFaculties" class="col-md-2" style="border: 1px solid #005551">
@@ -59,6 +76,80 @@
 </div>
 
 
+    <!-- =================================================//BODY//============================================= -->
+    <div class = "col-md-10" id="faculty" >
+        <a href="https://www.rtu.lv/en/university/structure-and-administration/faculties/electronics-and-telecommunications">
+           <h2 id="title">FACULTY OF ELECTRONICS AND TELECOMMUNICATIONS</h2>
+         </a>
+        <div>
+           <div id="img" class="col-md-6">
+           <a href="https://www.google.lv/maps/place/%C4%80zenes+iela+12%2F1,+Kurzemes+rajons,+R%C4%ABga,+LV-1048/@56.9514727,24.0779327,17z/data=!3m1!4b1!4m5!3m4!1s0x46eecfe046a63457:0xe9ed94fa69ae6e58!8m2!3d56.9514698!4d24.0801214">
+               <img src="../IMAGES/power.jpg" style="width: 100%;"> 
+           </a>
+          
+        </div> 
+        <div id="door" class="col-md-6">
+           <h2>Location</h2>
+           <a style="color: black;" href="https://www.google.lv/maps/place/%C4%80zenes+iela+12%2F1,+Kurzemes+rajons,+R%C4%ABga,+LV-1048/@56.9514727,24.0779327,17z/data=!3m1!4b1!4m5!3m4!1s0x46eecfe046a63457:0xe9ed94fa69ae6e58!8m2!3d56.9514698!4d24.0801214">    
+               <h4>
+                   <i class='fa fa-map-marker' style="font-size: 20px;"></i> 
+                   12 Azenes Street, Riga
+               </h4>
+           </a>
+           <h2>Contact</h2>
+           <h4>
+               <i class='fa fa-phone'></i> 
+               +371 67089245
+           </h4>
+           <h4>
+               <i class='fa fa-envelope-o'></i> 
+               etf@rtu.lv
+           </h4>
+           <a href="https://www.rtu.lv/lv/etf" style="color: black;">
+               <h4>
+                etf.rtu.lv
+               </h4>
+           </a>
+        </div>
+        <div class="col-md-12">
+            <h2 style="text-align: center;  color: #005551;">BUILDINGS</h2>
+            
+            <div class="col-md-12" style="text-align: center;">
+                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#azenesModal" style="color: black;">
+                    <h3 id="azenes"> Āz</h3>
+                    <h3 id="azenes"> Āzenes st</h3>
+                </button>
+                
+            </div>
+        </div>
+        </div>
+    </div>
+        </div>
+    
+        <!-- ============================================ MODAL============================================ --> 
+      <!-- Azenes Modal -->
+      <div class="modal fade" id="azenesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header" >
+            <div class="col-md-10">
+              <h3 class="modal-title" style="text-align: center; color:  #005551;" > Āzenes st</h3>
+            </div>
+            <div class="col-md-2">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            </div>
+            <div class="modal-body">
+             <!-- Add here coordinates at #-->
+              <a href="https://www.google.lv/maps/place/%C4%80zenes+iela+12%2F1,+Kurzemes+rajons,+R%C4%ABga,+LV-1048/@56.9514727,24.0779327,17z/data=!3m1!4b1!4m5!3m4!1s0x46eecfe046a63457:0xe9ed94fa69ae6e58!8m2!3d56.9514698!4d24.0801214"><img src="../IMAGES/azenes.png" style="width: 100%;"></a>
+              <h4 style="text-align: center;"><a href="https://www.google.lv/maps/place/%C4%80zenes+iela+12%2F1,+Kurzemes+rajons,+R%C4%ABga,+LV-1048/@56.9514727,24.0779327,17z/data=!3m1!4b1!4m5!3m4!1s0x46eecfe046a63457:0xe9ed94fa69ae6e58!8m2!3d56.9514698!4d24.0801214">Click here</a> to go to Google Maps</h4>
+            </div>
+            
+          </div>
+        </div>
+      </div>
         <!--============================================================FOOTER===============================================================-->
  <div  class="col-md-12">
          <footer class="col-md-12">

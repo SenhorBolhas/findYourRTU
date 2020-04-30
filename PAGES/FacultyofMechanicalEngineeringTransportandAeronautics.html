@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
- <head>
-            <link rel="stylesheet" type="text/css" href="../CSS/about.css">
-            <link rel="stylesheet" type="text/css" href="../CSS/header.css">
-            <link rel="stylesheet" type="text/css" href="../CSS/footer.css">
-           <link rel="stylesheet" type="text/css" href="../CSS/menu.css"> 
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        </head>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../CSS/about.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/header.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/footer.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/menu.css"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- Newww -->
+        <link rel="stylesheet" type="text/css" href="../CSS/fcs.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
         <body>
     <div>
     <div class="col-md-12">      
@@ -22,27 +27,39 @@
 
 
     <!--==========================================================NAVBAR====================================================-->
-<div class="col-md-12">
+    <div class="col-md-12">
         <div id="NAVBAR" class="col-md-12" >
-            <div id="logo">
-                <h3><a href="../index.html"><img src="../IMAGES/logo.png" height="70px" width="120px"></a></h3>
+            <div class="col-md-12" >
+            <div id="logo" class="col-md-2">
+            <h3><a href="../index.html"><img src="../IMAGES/logo.png" height="70px" width="120px"></a></h3>
             </div>
-
-            <nav id="nav1">
-
+            <div class="col-md-7">
+                <div class="col-md-8">
+                    <form class="example" action="#">
+                    <input type="text" placeholder="Search.." name="search">					
+                    </form>			
+                </div>
+                <div class="col-md-4">
+                <button class="btn cool-link btnSearch"  type="submit">Search</button>
+                </div>
+            </div>
+            <div class="col-md-3"  id="nav1">
                 <ul>
-                    <li><a href="../index.html" class="cool-link">Home</a></li>
-               
-                   
-
-                    <li><a href="../PAGES/AboutUs.html" class="cool-link">About us</a></li>
-                   
-
+                    <li>
+                    <div class="col-md-2">
+                    <a href="../index.html" class="cool-link">Home</a>
+                    </div>
+                    </li>
+                    <li id="nav1">
+                    <div class="col-md-12">
+                    <a href="../PAGES/AboutUs.html" class="cool-link">About us</a>
+                    </div>
+                    </li>
                 </ul>
-
-            </nav>
+            </div>
         </div>
-    </div>
+        </div>
+
         <!--=========================================================/NAVBAR====================================================-->
 
 <div id="allFaculties" class="col-md-2" style="border: 1px solid #005551">
@@ -57,6 +74,77 @@
   <a href="../PAGES/FacultyofPowerandElectricalEngineering.html">Faculty of Power and Electrical Engineering</a>
   <a href="../PAGES/FacultyofElectronicsandTelecommunications.html">Faculty of Electronics and Telecommunications</a>
 </div>
+<!-- =================================================//BODY//============================================= -->
+<div class = "col-md-10" id="faculty" >
+    <a href="https://www.rtu.lv/en/university/structure-and-administration/faculties/mechanical-engineering-transport-and-aeronautics">
+       <h2 id="title">FACULTY OF MECHANICAL ENGINEERING, TRANSPORT AND AERONAUTICS</h2>
+     </a>
+    <div>
+       <div id="img" class="col-md-6">
+       <a href="https://www.google.com/maps/place/%C4%B6%C4%ABpsalas+iela+6b,+Kurzemes+rajons,+R%C4%ABga,+LV-1048/@56.9533582,24.0802535,17z/data=!4m5!3m4!1s0x46eecfe0ea1694bf:0x9d68d0f8ffd83489!8m2!3d56.9533582!4d24.0824422">
+           <img src="../IMAGES/mechanic.jpg" style="width: 100%;"> 
+       </a>
+      
+    </div> 
+    <div id="door" class="col-md-6">
+       <h2>Location</h2>
+       <a style="color: black;" href="https://www.google.com/maps/place/%C4%B6%C4%ABpsalas+iela+6b,+Kurzemes+rajons,+R%C4%ABga,+LV-1048/@56.9533582,24.0802535,17z/data=!4m5!3m4!1s0x46eecfe0ea1694bf:0x9d68d0f8ffd83489!8m2!3d56.9533582!4d24.0824422">    
+           <h4>
+               <i class='fa fa-map-marker' style="font-size: 20px;"></i> 
+               6B Kipsala Street, Riga​
+           </h4>
+       </a>
+       <h2>Contact</h2>
+       <h4>
+           <i class='fa fa-phone'></i> 
+           +371 67089711
+       </h4>
+       <h4>
+           <i class='fa fa-envelope-o'></i> 
+           mtaf@rtu.lv
+       </h4>
+      
+    </div>
+    <div class="col-md-12">
+        <h2 style="text-align: center;  color: #005551;">BUILDINGS</h2>
+        
+        <div class="col-md-12" style="text-align: center;">
+            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#kipsala6BModal" style="color: black;">
+                <h3 id="kipsala6B">Ķīp6B</h3>
+                <h3 id="kipsala6B"> Ķīpsalas st 6B</h3>
+            </button>
+            
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+    <!-- ============================================ MODAL============================================ --> 
+  <!-- Kipsala 6B Modal -->
+  <div class="modal fade" id="kipsala6BModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" >
+        <div class="col-md-10">
+          <h3 class="modal-title" style="text-align: center; color:  #005551;" >Ķīpsalas st 6B</h3>
+        </div>
+        <div class="col-md-2">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        </div>
+        <div class="modal-body">
+         <!-- Add here coordinates at #-->
+          <a href="https://www.google.com/maps/place/%C4%B6%C4%ABpsalas+iela+6b,+Kurzemes+rajons,+R%C4%ABga,+LV-1048/@56.9533582,24.0802535,17z/data=!4m5!3m4!1s0x46eecfe0ea1694bf:0x9d68d0f8ffd83489!8m2!3d56.9533582!4d24.0824422"><img src="../IMAGES/kipsalaB.jpg.png" style="width: 100%;"></a>
+          <h4 style="text-align: center;"><a href="https://www.google.com/maps/place/%C4%B6%C4%ABpsalas+iela+6b,+Kurzemes+rajons,+R%C4%ABga,+LV-1048/@56.9533582,24.0802535,17z/data=!4m5!3m4!1s0x46eecfe0ea1694bf:0x9d68d0f8ffd83489!8m2!3d56.9533582!4d24.0824422">Click here</a> to go to Google Maps</h4>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
 
 
         <!--============================================================FOOTER===============================================================-->
