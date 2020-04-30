@@ -120,6 +120,7 @@ form.example input[type=text] {
   font-size: 17px;
   border-radius: 0%;
   border-bottom: 2px solid black;
+  color: black;
   width: 100%;
   background: white;
   margin-top: 20px;
