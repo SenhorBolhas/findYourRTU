@@ -1,0 +1,34 @@
+#allFaculties {
+  /*width: 200px;*/
+  height: 640px; 
+  background-color: #005551; 
+}
+
+#allFaculties a {
+  background-color: #005551;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+#allFaculties a:hover {
+  background-color: #a6adaa;
+  color: white;
+}
+
+#allFaculties a.active {
+  background-color: #005551;
+  color: white;
+}
+.w3-top a{
+  background-color: #00A17F;
+}
+.w3-red{
+  color:#fff!important;
+  background-color:#00A17F!important;
+}
+.w3-white{
+  background-color: #005551!important;
+  color:#fff!important;
+}
