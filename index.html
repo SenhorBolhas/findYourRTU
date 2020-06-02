@@ -15,7 +15,12 @@
         <header class="col-md-12" >
             <div class="right">
                 <a href="PAGES\help.html"> Help </a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
             </div>
+
+    
         </header>
     </div>
         <!--=========================================================/HEADER====================================================-->
@@ -63,7 +68,7 @@
 				<ul>
                     <li>
                     <div class="col-md-2">
-                    <a href="index.html" class="cool-link">Home</a>
+                    <a id="home" href="index.html" class="cool-link">Home</a>
                     </div>
                     </li>
                     <li id="nav1">
@@ -71,8 +76,10 @@
                     <a href="PAGES/aboutUs.html" class="cool-link">About us</a>
                     </div>
                     </li>
+                    
                 </ul>
             </div>
+            
         </div>
         </div>
 
@@ -81,13 +88,23 @@
     
         <!--=========================================================/NAVBAR====================================================-->
 
+        <script>
+          function myFunction() {
+            var x = document.getElementById("nav1");
+            if (x.idName === "nav1") {
+              x.className += " responsive";
+            } else {
+              x.idName = "nav1";
+            }
+          }
+          </script>
 
 
 
 <div class="col-md-12">
     
 <div id="allFaculties" class="col-md-2" style="border: 1px solid #005551">
-  <a href="#" class="active">Our Faculties</a>
+  <a class="active">Our Faculties</a>
   <a href="PAGES/FacultyofArchitecture.html">Faculty of Architecture</a>
   <a href="PAGES/FacultyofCivilEngineering.html">Faculty of Civil Engineering</a>
   <a href="PAGES/FacultyofComputerScienceandInformationTechnology.html">Faculty of Computer Science and Information Technology</a>
