@@ -11,8 +11,8 @@ body {
 /*--==========================================================/BODY=====================================================--*/
 .dropdown-content {
 	  	display: none;
-	  	//position: relative;
-	  	//background-color: #f6f6f6;
+	  	position: relative;
+	  	background-color: #f6f6f6;
 	  	min-width: 230px;
 	  	overflow: auto;
 	  	border: 1px solid #ddd;

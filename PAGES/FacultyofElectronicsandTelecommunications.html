@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="../CSS/header.css">
         <link rel="stylesheet" type="text/css" href="../CSS/footer.css">
         <link rel="stylesheet" type="text/css" href="../CSS/menu.css"> 
+        <link rel="stylesheet" type="text/css" href="../CSS/index.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <!-- Newww -->
         <link rel="stylesheet" type="text/css" href="../CSS/fcs.css">
@@ -36,12 +37,33 @@
             <div class="col-md-7">
                 <div class="col-md-8">
                     <form class="example" action="#">
-                    <input type="text" placeholder="Search.." name="search">					
-                    </form>			
+                        <input onclick="myF1();" type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()" name="search">
+                    </form>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a onclick="myF1(); document.getElementById('myInput').value='Kip6(Kipsalas st 6) Faculty of architecture'; arg2 = 'FacultyofArchitecture.html';">Kip6(Kipsalas st 6) Faculty of architecture</a>
+                        
+                         <a onclick="myF1(); document.getElementById('myInput').value='Kip6A(Kipsalas st 6A) - Kip6B(Kipsalas st 6B) Faculty of Civil Engineering'; arg2 = 'FacultyofCivilEngineering.html';">Kip6A(Kipsalas st 6A) - Kip6B(Kipsalas st 6B) Faculty of Civil Engineering</a>
+                        
+                         <a onclick="myF1(); document.getElementById('myInput').value='S1(Setas st 1) - D2(Daugavgrivas st 2) - M1(Meza st) Faculty of Computer Science and Information Technology'; arg2 = 'FacultyofComputerScienceandInformationTechnology.html';">S1(Setas st 1) - D2(Daugavgrivas st 2) - M1(Meza st) Faculty of Computer Science and Information Technology</a>
+                        
+                         <a onclick="myF1(); document.getElementById('myInput').value='Kr(Kronvalda bulvaris) Faculty of E-Learning Technologies and Humanities'; arg2 = 'FacultyofE-LearningTechnologiesandHumanities.html';">Kr(Kronvalda bulvaris) Faculty of E-Learning Technologies and Humanities</a>
+                        
+                        <a onclick="myF1(); document.getElementById('myInput').value='Kc6(Kalnciema st 6) Faculty of Engineering Economics and Management'; arg2 = 'FacultyofEngineeringEconomicsandManagement.html';">Kc6(Kalnciema st 6) Faculty of Engineering Economics and Management</a>
+                        
+                         <a onclick="myF1(); document.getElementById('myInput').value='PV(Paula Valdena st) Faculty of Materials Science and Applied Chemistry'; arg2 = 'FacultyofMaterialsScienceandAppliedChemistry.html';">PV(Paula Valdena st) Faculty of Materials Science and Applied Chemistry</a>
+                        
+                         <a onclick="myF1(); document.getElementById('myInput').value='Kip6B(Kipsalas st 6B) Faculty of Mechanical Engineering Transport and Aeronautics'; arg2 = 'FacultyofMechanicalEngineeringTransportandAeronautics.html';">Kip6B(Kipsalas st 6B) Faculty of Mechanical Engineering Transport and Aeronautics</a>
+                        
+                         <a onclick="myF1(); document.getElementById('myInput').value='Az(Āzenes st) Faculty of Electrical and Environmental Engineering'; arg2 = 'FacultyofPowerandElectricalEngineering.html';">Az(Azenes st) Faculty of Electrical and Environmental Engineering</a>
+                        
+                        <a onclick="myF1(); document.getElementById('myInput').value='Az(Āzenes st) Faculty of Electronics and Telecommunications'; arg2 = 'FacultyofElectronicsandTelecommunications.html';">Az(Azenes st) Faculty of Electronics and Telecommunications</a>
+
+                    </div>
                 </div>
                 <div class="col-md-4">
-                <button class="btn cool-link btnSearch"  type="submit">Search</button>
+                    <button onclick="myF3()" class="btn cool-link btnSearch"   type="button">Search</button>
                 </div>
+
             </div>
             <div class="col-md-3"  id="nav1">
                 <ul>
@@ -189,7 +211,7 @@
                                     Mail: 1011<br /></p>
                                 <p class="big">Telephone: +371...<br />
                                     Fax:+371....<br />
-                                    Email: <a href="mailto:findYourRTU@rtu.lv">findYourRTU@rtu.lv</a></p>
+                                    Email: <a href="mailto:findyourrtu@gmail.com">findyourrtu@gmail.com</a></p>
                             </adress><br />
                         </div>
                     </div>
@@ -236,6 +258,32 @@
     </div>
     <!--==========================================================/FOOTER===============================================================-->  
 </div>
+<script>
+    var arg2;
+    function myF1(){
+        document.getElementById("myDropdown").classList.toggle("show");
+        //window.location.replace("http://www.w3schools.com");
+    }
+    function filterFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      div = document.getElementById("myDropdown");
+      a = div.getElementsByTagName("a");
+      for (i = 0; i < a.length; i++) {
+        txtValue = a[i].textContent || a[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          a[i].style.display = "";
+        } else {
+          a[i].style.display = "none";
+        }
+      }
+    }
+
+    function myF3(){
+        window.location.href = arg2;
+    }
+</script>
   
 </body>
 
