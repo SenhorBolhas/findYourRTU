@@ -2,6 +2,7 @@ from flask import Flask, render_template, session, redirect, request
 import random
 import datetime
 app = Flask(__name__)
+app.debug = True
 app.secret_key= "Very_secret"
 
 @app.route("/")
