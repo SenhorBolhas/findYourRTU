@@ -15,7 +15,7 @@ def help():
 
 @app.route('/aboutus')
 def aboutus():
-    return render_template("aboutus.html")
+    return render_template("aboutUs.html")
 
 @app.route('/FacultyofArchitecture')
 def facultyofArchitecture():
