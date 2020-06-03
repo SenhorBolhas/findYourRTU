@@ -121,7 +121,7 @@ form.example input[type=text] {
   border-radius: 0%;
   border-bottom: 2px solid black;
   color: black;
-  width: 100%;
+  width: 70%;
   background: white;
   margin-top: 20px;
   padding-left: 20px;
@@ -142,8 +142,8 @@ div.col-md-4{
 
 }
 form.example button {
-    align-self: center;
-  width: 100%;
+  
+  width: 20%;
   background: #AAAAAA;
   color: white;
   font-size: 17px;

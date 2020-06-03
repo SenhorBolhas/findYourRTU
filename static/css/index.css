@@ -70,6 +70,10 @@ body {
 
 		.show {display: block;}
 
+		#black{
+			color: black !important;
+		}
+
 /* ==================================SLIDESHOWWWWWWWWWWWWWW================================*/
 * {box-sizing: border-box;}
 
@@ -170,7 +174,6 @@ body {
   }
   
  #nav1 .icon {
-	color: white !important;
 	display: none;
   }
   
