@@ -71,4 +71,3 @@ def FacultyofPowerandElectricalEngineering():
 
 
 
-app.run(debug=True)
